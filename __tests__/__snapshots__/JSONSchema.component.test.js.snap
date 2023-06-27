@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JSONSchema component given JSON renders as expected 1`] = `
+<script
+  type="application/ld+json"
+>
+  {"@context":"https://schema.org/","@type":"Organization","@id":"https://acme.com","url":"https://acme.com","name":"ACME"}
+</script>
+`;
+
+exports[`JSONSchema component no JSON renders as expected 1`] = `null`;
