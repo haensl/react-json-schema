@@ -67,13 +67,15 @@
   "keywords": [
     "schema",
     "schema.org",
+    "structured data",
     "json+ld",
     "jsonld",
     "microdata",
     "next.js",
     "nextjs",
     "react",
-    "component"
+    "component",
+    "seo"
   ],
   "author": {
     "name": "HP Dietz",
