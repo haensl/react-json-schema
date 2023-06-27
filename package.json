@@ -58,7 +58,7 @@
   "jest-junit": {
     "outputDirectory": "test-results/jest",
     "outputName": "results.xml",
-    "suitName": "@haensl/next-google-analytics unit tests"
+    "suitName": "@haensl/react-json-schema unit tests"
   },
   "repository": {
     "type": "git",
@@ -66,9 +66,12 @@
   },
   "keywords": [
     "schema",
+    "schema.org",
     "json+ld",
     "jsonld",
     "microdata",
+    "next.js",
+    "nextjs",
     "react",
     "component"
   ],
