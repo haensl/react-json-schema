@@ -1,4 +1,4 @@
-import { jsonLd } from '@haensl/mimetypes';
+import mimetypes from '@haensl/mimetypes';
 
 const JSONSchema = ({ json = {} }) => {
   if (!json || !Object.keys(json).length) {
@@ -10,7 +10,7 @@ const JSONSchema = ({ json = {} }) => {
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(json)
       }}
-      type={ jsonLd }
+      type={ mimetypes.jsonLd }
     />
   );
 };

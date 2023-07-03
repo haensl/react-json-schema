@@ -26,6 +26,7 @@ $ yarn add @haensl/react-json-schema
 
 ## Usage
 
+This component is **not** pre-compiled, but exposed as ESModule.
 
 ```javascript
 import JSONSchema from '@haensl/react-json-schema';
@@ -50,6 +51,25 @@ const MyComponent = (props) => {
 
 export default MyComponent;
 ```
+
+### Example: Usage with [`Next.js`](https://nextjs.org/docs/pages/api-reference/next-config-js/webpack) <a name="usage/next.js"></a>
+
+```javascript
+// Example next.config.js for adding a loader that will transpile @haensl/react-json-schema
+module.exports = {
+  webpack: (config, { defaultLoaders }) => {
+    config.module.rules.push({
+      test: /@haensl\/react-json-schema/,
+      use: [
+        defaultLoaders.babel,
+      ]
+    });
+
+    return config;
+  }
+};
+```
+
 
 ## Synopsis
 
